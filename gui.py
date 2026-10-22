@@ -11,11 +11,10 @@ import tkinter as tk
 
 
 def calculate():
-    # TODO: read the bill amount with entry.get() and turn it into a float. Work out
-    #   a 15% tip and the total (bill + tip). Then show them, e.g.:
-    #       result.config(text="Tip: $1.50   Total: $11.50")
-    pass
-
+    subtotal = float(entry.get())
+    tip = float(subtotal) * 0.15
+    total = subtotal+tip
+    result.config(text=f'Tip: ${tip:.2}   Total: ${total:.2}')
 
 root = tk.Tk()
 root.title("Tip Calculator")
