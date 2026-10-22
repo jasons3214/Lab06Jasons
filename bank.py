@@ -30,7 +30,8 @@ def main():
 
         elif choice == "4":
             print("Goodbye")
-            
+            break
+        
         else:
             print("Invalid choice")
 
